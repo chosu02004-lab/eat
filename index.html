@@ -1,0 +1,17 @@
+<!doctype html><html lang='ko'><head>
+<meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
+<title>점심 AI</title><link rel='stylesheet' href='style.css'></head>
+<body><div class='app'>
+<header>🤖 점심 추천 AI</header>
+<div id='chat' class='chat'>
+<div class='msg bot'>안녕하세요! 점심 뭐 먹지? 라고 입력하거나 아래 음식 종류를 선택해보세요.</div>
+</div>
+<div class='cats'>
+<button onclick="choose('한식')">🍚 한식</button>
+<button onclick="choose('일식')">🍣 일식</button>
+<button onclick="choose('중식')">🥟 중식</button>
+<button onclick="choose('양식')">🍝 양식</button>
+<button onclick="again()">🔄 다른 메뉴</button>
+</div>
+<div class='input'><input id='q' placeholder='메시지를 입력하세요'><button onclick='send()'>전송</button></div>
+</div><script src='script.js'></script></body></html>
