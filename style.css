@@ -1,0 +1,10 @@
+*{box-sizing:border-box}body{margin:0;background:#eceff1;font-family:Arial}
+.app{max-width:480px;margin:auto;height:100vh;background:#fff;display:flex;flex-direction:column}
+header{background:#10a37f;color:#fff;padding:16px;text-align:center;font-size:22px;font-weight:bold}
+.chat{flex:1;overflow:auto;padding:15px;display:flex;flex-direction:column;gap:12px}
+.msg{padding:12px 15px;border-radius:18px;max-width:82%;line-height:1.5;animation:fade .25s}
+.bot{background:#f3f3f3;align-self:flex-start}.user{background:#10a37f;color:#fff;align-self:flex-end}
+.cats{display:flex;flex-wrap:wrap;gap:8px;padding:10px;border-top:1px solid #ddd}
+.cats button,.input button{background:#10a37f;color:#fff;border:none;border-radius:20px;padding:10px 14px;cursor:pointer}
+.input{display:flex;padding:10px;border-top:1px solid #ddd}.input input{flex:1;padding:12px;border:1px solid #ccc;border-radius:10px}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}@media(max-width:600px){.app{max-width:100%}}
